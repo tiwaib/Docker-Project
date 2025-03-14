@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  countdown-timer:
+    image: countdown-timer
+    build: .
+    ports:
+      - "8083:80"
+    restart: always
