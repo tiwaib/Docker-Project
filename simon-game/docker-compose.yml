@@ -1,9 +1,0 @@
-version: "3.8"
-
-services:
-  game-website:
-    build: .
-    container_name: game-website
-    ports:
-      - "8084:80"  # Expose the static website on port 8084
-    restart: always
