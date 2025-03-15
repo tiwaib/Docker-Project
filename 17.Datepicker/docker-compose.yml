@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    image: datepicker-app
+    build: .
+    ports:
+      - "8087:80"
+    restart: unless-stopped
+

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  python-web:
+    build:
+      context: .
+    ports:
+      - "8082:80"  # Bind host port 8080 to container port 80
+    volumes:
+      - .:/code  # Mount the current directory to /code inside the container
+    command: ["python", "index.py"]  # Command to run the Python app
+
